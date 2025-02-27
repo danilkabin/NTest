@@ -4,11 +4,11 @@ project(VPN)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_subdirectory(Bong)
+#add_subdirectory(Bong)
 
 add_executable(VPN
     main.cpp
 )
 
-target_include_directories(VPN PRIVATE Bong)
-target_link_libraries(VPN PRIVATE BongLibrary)
+target_include_directories(VPN PRIVATE)
+target_link_libraries(VPN PRIVATE)

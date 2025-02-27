@@ -1,0 +1,3 @@
+/mnt/githubs/VPN/CMakeFiles/VPN.dir
+/mnt/githubs/VPN/CMakeFiles/edit_cache.dir
+/mnt/githubs/VPN/CMakeFiles/rebuild_cache.dir
