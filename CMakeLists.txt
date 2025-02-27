@@ -3,13 +3,15 @@ cmake_minimum_required(VERSION 3.10)
 project(VPN)
 
 set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED YES)
 
 #add_subdirectory(Bong)
 
 add_executable(VPN
 
    include/application.h
-   
+   include/slave.h
+
    src/application.cpp
 
 main.cpp

@@ -1,8 +1,12 @@
-
+#include <atomic>
 #include <netinet/in.h>
 #include <vector>
+
 class paskydaVPN {
 public:
+  paskydaVPN() : activeThreads(0) {}
+  ~paskydaVPN() {}
+
   static paskydaVPN *Instance() {
     static paskydaVPN Instance;
     return &Instance;
@@ -12,6 +16,11 @@ public:
   void bindSocket();
   void listenSocket();
   void initializeAdressconf();
+  void handleClient();
+
+  void incrementThread();
+  void decrementThread();
+
   int acceptClient();
   int readClient();
 
@@ -25,10 +34,14 @@ public:
 
   std::vector<int> Clients;
 
+  std::atomic<int> activeThreads;
+
   struct sockaddr_in adressconf;
 
 #define IP_ADRESS "91.149.233.240"
 #define PORT 8080
+#define BUFFER_SIZE 1024
+#define MAXIMUM_THREADS 5
 
 private:
 };
