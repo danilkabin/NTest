@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/githubs/VPN/main.cpp" "CMakeFiles/VPN.dir/main.cpp.o" "gcc" "CMakeFiles/VPN.dir/main.cpp.o.d"
+  "/mnt/githubs/VPN/src/application.cpp" "CMakeFiles/VPN.dir/src/application.cpp.o" "gcc" "CMakeFiles/VPN.dir/src/application.cpp.o.d"
   "" "VPN" "gcc" "CMakeFiles/VPN.dir/link.d"
   )
 

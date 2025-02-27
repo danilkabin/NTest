@@ -85,12 +85,12 @@ clean: CMakeFiles/VPN.dir/clean
 CMakeFiles/VPN.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/githubs/VPN/build/CMakeFiles --progress-num=1,2 "Built target VPN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/githubs/VPN/build/CMakeFiles --progress-num=1,2,3 "Built target VPN"
 .PHONY : CMakeFiles/VPN.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/VPN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/githubs/VPN/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/githubs/VPN/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/VPN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/githubs/VPN/build/CMakeFiles 0
 .PHONY : CMakeFiles/VPN.dir/rule
@@ -102,7 +102,7 @@ VPN: CMakeFiles/VPN.dir/rule
 # codegen rule for target.
 CMakeFiles/VPN.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/githubs/VPN/build/CMakeFiles --progress-num=1,2 "Finished codegen for target VPN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/githubs/VPN/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target VPN"
 .PHONY : CMakeFiles/VPN.dir/codegen
 
 # clean rule for target.

@@ -7,7 +7,12 @@ set(CMAKE_CXX_STANDARD 20)
 #add_subdirectory(Bong)
 
 add_executable(VPN
-    main.cpp
+
+   include/application.h
+   
+   src/application.cpp
+
+main.cpp
 )
 
 target_include_directories(VPN PRIVATE)

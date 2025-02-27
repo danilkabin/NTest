@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/application.o: src/application.cpp.o
+.PHONY : src/application.o
+
+# target to build an object file
+src/application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/src/application.cpp.o
+.PHONY : src/application.cpp.o
+
+src/application.i: src/application.cpp.i
+.PHONY : src/application.i
+
+# target to preprocess a source file
+src/application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/src/application.cpp.i
+.PHONY : src/application.cpp.i
+
+src/application.s: src/application.cpp.s
+.PHONY : src/application.s
+
+# target to generate assembly for a file
+src/application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/src/application.cpp.s
+.PHONY : src/application.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/application.o"
+	@echo "... src/application.i"
+	@echo "... src/application.s"
 .PHONY : help
 
 
