@@ -224,5 +224,16 @@ CMakeFiles/VPN.dir/src/application.cpp.o: \
  /usr/include/c++/14.2.1/bits/this_thread_sleep.h /usr/include/sys/time.h \
  /usr/include/semaphore.h /usr/include/bits/semaphore.h \
  /mnt/githubs/VPN/src/../include/application.h \
- /mnt/githubs/VPN/src/../include/slave.h \
- /mnt/githubs/VPN/src/../include/slave.h
+ /usr/include/c++/14.2.1/map /usr/include/c++/14.2.1/bits/stl_tree.h \
+ /usr/include/c++/14.2.1/bits/node_handle.h \
+ /usr/include/c++/14.2.1/bits/stl_map.h \
+ /usr/include/c++/14.2.1/bits/stl_multimap.h \
+ /usr/include/c++/14.2.1/bits/erase_if.h /usr/include/c++/14.2.1/memory \
+ /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/14.2.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/14.2.1/backward/auto_ptr.h \
+ /usr/include/c++/14.2.1/bits/ranges_uninitialized.h \
+ /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
+ /usr/include/c++/14.2.1/pstl/execution_defs.h \
+ /mnt/githubs/VPN/src/../include/slavemanager.h \
+ /mnt/githubs/VPN/src/../include/slavemanager.h

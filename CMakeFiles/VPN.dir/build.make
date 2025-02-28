@@ -72,10 +72,24 @@ include CMakeFiles/VPN.dir/flags.make
 CMakeFiles/VPN.dir/codegen:
 .PHONY : CMakeFiles/VPN.dir/codegen
 
+CMakeFiles/VPN.dir/src/slavemanager.cpp.o: CMakeFiles/VPN.dir/flags.make
+CMakeFiles/VPN.dir/src/slavemanager.cpp.o: src/slavemanager.cpp
+CMakeFiles/VPN.dir/src/slavemanager.cpp.o: CMakeFiles/VPN.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/githubs/VPN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VPN.dir/src/slavemanager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VPN.dir/src/slavemanager.cpp.o -MF CMakeFiles/VPN.dir/src/slavemanager.cpp.o.d -o CMakeFiles/VPN.dir/src/slavemanager.cpp.o -c /mnt/githubs/VPN/src/slavemanager.cpp
+
+CMakeFiles/VPN.dir/src/slavemanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VPN.dir/src/slavemanager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/githubs/VPN/src/slavemanager.cpp > CMakeFiles/VPN.dir/src/slavemanager.cpp.i
+
+CMakeFiles/VPN.dir/src/slavemanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VPN.dir/src/slavemanager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/githubs/VPN/src/slavemanager.cpp -o CMakeFiles/VPN.dir/src/slavemanager.cpp.s
+
 CMakeFiles/VPN.dir/src/slave.cpp.o: CMakeFiles/VPN.dir/flags.make
 CMakeFiles/VPN.dir/src/slave.cpp.o: src/slave.cpp
 CMakeFiles/VPN.dir/src/slave.cpp.o: CMakeFiles/VPN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/githubs/VPN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VPN.dir/src/slave.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/githubs/VPN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VPN.dir/src/slave.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VPN.dir/src/slave.cpp.o -MF CMakeFiles/VPN.dir/src/slave.cpp.o.d -o CMakeFiles/VPN.dir/src/slave.cpp.o -c /mnt/githubs/VPN/src/slave.cpp
 
 CMakeFiles/VPN.dir/src/slave.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/VPN.dir/src/slave.cpp.s: cmake_force
 CMakeFiles/VPN.dir/src/application.cpp.o: CMakeFiles/VPN.dir/flags.make
 CMakeFiles/VPN.dir/src/application.cpp.o: src/application.cpp
 CMakeFiles/VPN.dir/src/application.cpp.o: CMakeFiles/VPN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/githubs/VPN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VPN.dir/src/application.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/githubs/VPN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VPN.dir/src/application.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VPN.dir/src/application.cpp.o -MF CMakeFiles/VPN.dir/src/application.cpp.o.d -o CMakeFiles/VPN.dir/src/application.cpp.o -c /mnt/githubs/VPN/src/application.cpp
 
 CMakeFiles/VPN.dir/src/application.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/VPN.dir/src/application.cpp.s: cmake_force
 CMakeFiles/VPN.dir/main.cpp.o: CMakeFiles/VPN.dir/flags.make
 CMakeFiles/VPN.dir/main.cpp.o: main.cpp
 CMakeFiles/VPN.dir/main.cpp.o: CMakeFiles/VPN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/githubs/VPN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VPN.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/githubs/VPN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VPN.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VPN.dir/main.cpp.o -MF CMakeFiles/VPN.dir/main.cpp.o.d -o CMakeFiles/VPN.dir/main.cpp.o -c /mnt/githubs/VPN/main.cpp
 
 CMakeFiles/VPN.dir/main.cpp.i: cmake_force
@@ -116,6 +130,7 @@ CMakeFiles/VPN.dir/main.cpp.s: cmake_force
 
 # Object files for target VPN
 VPN_OBJECTS = \
+"CMakeFiles/VPN.dir/src/slavemanager.cpp.o" \
 "CMakeFiles/VPN.dir/src/slave.cpp.o" \
 "CMakeFiles/VPN.dir/src/application.cpp.o" \
 "CMakeFiles/VPN.dir/main.cpp.o"
@@ -123,13 +138,14 @@ VPN_OBJECTS = \
 # External object files for target VPN
 VPN_EXTERNAL_OBJECTS =
 
+VPN: CMakeFiles/VPN.dir/src/slavemanager.cpp.o
 VPN: CMakeFiles/VPN.dir/src/slave.cpp.o
 VPN: CMakeFiles/VPN.dir/src/application.cpp.o
 VPN: CMakeFiles/VPN.dir/main.cpp.o
 VPN: CMakeFiles/VPN.dir/build.make
 VPN: CMakeFiles/VPN.dir/compiler_depend.ts
 VPN: CMakeFiles/VPN.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/githubs/VPN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable VPN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/githubs/VPN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable VPN"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VPN.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

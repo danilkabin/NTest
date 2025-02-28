@@ -1,8 +1,8 @@
-#include "../include/slave.h"
+#include "../include/slavemanager.h"
 #include <cstring>
 
-SlaveData::SlaveData() : SLAVE_PORT(0), SLAVE_ID(0) {
+SlaveManager::SlaveData::SlaveData() : SLAVE_PORT(0), SLAVE_ID(0) {
   memset(&SlaveAddr, 0, sizeof(SlaveAddr));
 }
 
-SlaveData::~SlaveData() {}
+SlaveManager::SlaveData::~SlaveData() {}

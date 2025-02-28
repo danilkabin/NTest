@@ -10,8 +10,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED YES)
 add_executable(VPN
 
    include/application.h
-   include/slave.h
+   include/slavemanager.h
 
+   src/slavemanager.cpp
    src/slave.cpp
    src/application.cpp
 

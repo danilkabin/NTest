@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/VPN.dir/link.d CMakeFiles/VPN.dir/src/slave.cpp.o CMakeFiles/VPN.dir/src/application.cpp.o CMakeFiles/VPN.dir/main.cpp.o -o VPN
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/VPN.dir/link.d CMakeFiles/VPN.dir/src/slavemanager.cpp.o CMakeFiles/VPN.dir/src/slave.cpp.o CMakeFiles/VPN.dir/src/application.cpp.o CMakeFiles/VPN.dir/main.cpp.o -o VPN

@@ -1,12 +1,14 @@
 #include <atomic>
+#include <map>
+#include <memory>
 #include <netinet/in.h>
 #include <vector>
 
-#include "slave.h"
+#include "slavemanager.h"
 
 class paskydaVPN {
 public:
-  paskydaVPN() : activeThreads(0) {}
+  paskydaVPN() {}
   ~paskydaVPN() {}
 
   static paskydaVPN *Instance() {
@@ -19,10 +21,9 @@ public:
   void listenSocket();
   void initializeAdressconf();
 
-  void incrementThread();
-  void decrementThread();
+  void addSlave();
 
-  int handleClient(SlaveData Slave);
+  int handleClient(SlaveManager::SlaveData Slave);
   int acceptClient();
   int readClient();
 
@@ -33,10 +34,6 @@ public:
   int Listen_fd;
 
   int backLog = 5;
-
-  std::vector<int> Clients;
-
-  std::atomic<int> activeThreads;
 
   struct sockaddr_in adressconf;
 

@@ -201,6 +201,30 @@ src/slave.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/src/slave.cpp.s
 .PHONY : src/slave.cpp.s
 
+src/slavemanager.o: src/slavemanager.cpp.o
+.PHONY : src/slavemanager.o
+
+# target to build an object file
+src/slavemanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/src/slavemanager.cpp.o
+.PHONY : src/slavemanager.cpp.o
+
+src/slavemanager.i: src/slavemanager.cpp.i
+.PHONY : src/slavemanager.i
+
+# target to preprocess a source file
+src/slavemanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/src/slavemanager.cpp.i
+.PHONY : src/slavemanager.cpp.i
+
+src/slavemanager.s: src/slavemanager.cpp.s
+.PHONY : src/slavemanager.s
+
+# target to generate assembly for a file
+src/slavemanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VPN.dir/build.make CMakeFiles/VPN.dir/src/slavemanager.cpp.s
+.PHONY : src/slavemanager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +243,9 @@ help:
 	@echo "... src/slave.o"
 	@echo "... src/slave.i"
 	@echo "... src/slave.s"
+	@echo "... src/slavemanager.o"
+	@echo "... src/slavemanager.i"
+	@echo "... src/slavemanager.s"
 .PHONY : help
 
 
