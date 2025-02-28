@@ -12,6 +12,7 @@ add_executable(VPN
    include/application.h
    include/slave.h
 
+   src/slave.cpp
    src/application.cpp
 
 main.cpp

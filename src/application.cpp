@@ -32,10 +32,23 @@ void paskydaVPN::initializeAdressconf() {
   adressconf.sin_port = htons(PORT);
 }
 
-void paskydaVPN::handleClient() {
+int paskydaVPN::handleClient(SlaveData Slave) {
   char buffer[BUFFER_SIZE];
-  //  int receivedPackage = (Socket_fd, (char*)buffer, BUFFER_SIZE, 0, (struct
-  //  sockaddr*))
+
+  socklen_t addr_len = sizeof(Slave.SlaveAddr);
+  std::cout << "1" << std::endl;
+  ssize_t receivedPackage =
+      recvfrom(Socket_fd, (char *)buffer, BUFFER_SIZE, 0,
+               (struct sockaddr *)&Slave.SlaveAddr, &addr_len);
+
+  std::cout << "2" << std::endl;
+  if (receivedPackage < 0) {
+    std::cout << "bad package" << std::endl;
+    return 1;
+  }
+
+  std::cout << Slave.SlaveAddr.sin_addr.s_addr << std::endl;
+  return 0;
 }
 
 void paskydaVPN::incrementThread() { activeThreads.fetch_add(1); }
@@ -65,8 +78,9 @@ int paskydaVPN::run() {
     return 1;
   }
 
+  SlaveData Client;
   while (true) {
-    SlaveData Client;
+    handleClient(Client);
   }
 
   std::cout << "activeThreads: " << activeThreads << std::endl;

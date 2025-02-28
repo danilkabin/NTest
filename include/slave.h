@@ -1,11 +1,15 @@
+#ifndef SLAVE_H
+#define SLAVE_H
+
 #include <arpa/inet.h>
 #include <chrono>
 #include <cstdint>
+#include <cstring>
 #include <netinet/in.h>
 class SlaveData {
 public:
-  SlaveData() : SLAVE_ID(0), SLAVE_PORT(0) {}
-  ~SlaveData() {}
+  SlaveData();
+  ~SlaveData();
 
   enum class SlaveStatus { Connected, Disconnected };
 
@@ -22,3 +26,5 @@ public:
 
 private:
 };
+
+#endif

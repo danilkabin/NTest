@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/githubs/VPN/main.cpp" "CMakeFiles/VPN.dir/main.cpp.o" "gcc" "CMakeFiles/VPN.dir/main.cpp.o.d"
   "/mnt/githubs/VPN/src/application.cpp" "CMakeFiles/VPN.dir/src/application.cpp.o" "gcc" "CMakeFiles/VPN.dir/src/application.cpp.o.d"
+  "/mnt/githubs/VPN/src/slave.cpp" "CMakeFiles/VPN.dir/src/slave.cpp.o" "gcc" "CMakeFiles/VPN.dir/src/slave.cpp.o.d"
   "" "VPN" "gcc" "CMakeFiles/VPN.dir/link.d"
   )
 

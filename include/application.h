@@ -2,6 +2,8 @@
 #include <netinet/in.h>
 #include <vector>
 
+#include "slave.h"
+
 class paskydaVPN {
 public:
   paskydaVPN() : activeThreads(0) {}
@@ -16,11 +18,11 @@ public:
   void bindSocket();
   void listenSocket();
   void initializeAdressconf();
-  void handleClient();
 
   void incrementThread();
   void decrementThread();
 
+  int handleClient(SlaveData Slave);
   int acceptClient();
   int readClient();
 
